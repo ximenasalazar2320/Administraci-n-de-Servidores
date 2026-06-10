@@ -1,0 +1,297 @@
+@charset "utf-8";
+
+/* ==================================
+   FUENTE
+================================== */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+
+/* ==================================
+   RESET
+================================== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:'Poppins',sans-serif;
+
+    background:
+    linear-gradient(
+        rgba(2,6,23,.88),
+        rgba(15,23,42,.90)
+    ),
+    url("indice3.jpg");
+
+    background-size:cover;
+    background-position:center;
+    background-attachment:fixed;
+
+    color:white;
+}
+
+/* ==================================
+   SCROLL
+================================== */
+
+::-webkit-scrollbar{
+    width:10px;
+}
+
+::-webkit-scrollbar-track{
+    background:#111827;
+}
+
+::-webkit-scrollbar-thumb{
+    background:#3b82f6;
+    border-radius:20px;
+}
+
+/* ==================================
+   TITULO PRINCIPAL
+================================== */
+
+.h2{
+
+    text-align:center;
+
+    margin:40px auto;
+
+    width:90%;
+
+    background:rgba(255,255,255,.05);
+
+    backdrop-filter:blur(10px);
+
+    border:1px solid rgba(255,255,255,.08);
+
+    border-radius:25px;
+
+    padding:25px;
+
+    box-shadow:
+    0 15px 35px rgba(0,0,0,.35);
+}
+
+.h2 h2{
+
+    color:#60a5fa;
+
+    font-size:55px;
+
+    letter-spacing:2px;
+}
+
+/* ==================================
+   IMAGENES
+================================== */
+
+table{
+
+    margin:auto;
+}
+
+.caja,
+.caja1{
+
+    background:rgba(255,255,255,.05);
+
+    backdrop-filter:blur(10px);
+
+    border:1px solid rgba(255,255,255,.08);
+
+    border-radius:25px;
+
+    padding:15px;
+
+    margin:20px;
+
+    width:auto;
+
+    height:auto;
+
+    box-shadow:
+    0 15px 35px rgba(0,0,0,.35);
+
+    transition:.4s;
+}
+
+.caja:hover,
+.caja1:hover{
+
+    transform:translateY(-8px);
+
+    box-shadow:
+    0 20px 40px rgba(37,99,235,.2);
+}
+
+.caja img,
+.caja1 img{
+
+    border-radius:15px;
+
+    display:block;
+}
+
+/* ==================================
+   SUBTITULOS
+================================== */
+
+.h3{
+
+    width:90%;
+
+    margin:35px auto 15px auto;
+
+    color:#60a5fa;
+
+    font-size:28px;
+
+    font-weight:700;
+
+    text-align:left;
+}
+
+/* ==================================
+   PARRAFOS PRINCIPALES
+================================== */
+
+.p{
+
+    width:90%;
+
+    margin:auto auto 30px auto;
+
+    background:rgba(255,255,255,.05);
+
+    backdrop-filter:blur(10px);
+
+    border:1px solid rgba(255,255,255,.08);
+
+    border-radius:25px;
+
+    padding:30px;
+
+    box-shadow:
+    0 15px 35px rgba(0,0,0,.3);
+}
+
+.p p{
+
+    font-size:22px;
+
+    line-height:1.9;
+
+    color:#d1d5db;
+
+    text-align:justify;
+}
+
+/* ==================================
+   PUNTOS Y DEFINICIONES
+================================== */
+
+.p1{
+
+    width:90%;
+
+    margin:auto auto 20px auto;
+
+    background:rgba(255,255,255,.03);
+
+    border-radius:18px;
+
+    padding:25px;
+
+    border:1px solid rgba(255,255,255,.05);
+}
+
+.p1 p{
+
+    font-size:21px;
+
+    line-height:1.8;
+
+    color:#d1d5db;
+
+    text-align:justify;
+}
+
+/* ==================================
+   ENLACES
+================================== */
+
+.ahref{
+
+    text-align:center;
+
+    margin:40px auto 60px auto;
+}
+
+.ahref a{
+
+    display:inline-block;
+
+    text-decoration:none;
+
+    color:white;
+
+    background:linear-gradient(
+        90deg,
+        #2563eb,
+        #1d4ed8
+    );
+
+    padding:15px 35px;
+
+    border-radius:15px;
+
+    font-size:22px;
+
+    transition:.3s;
+}
+
+.ahref a:hover{
+
+    transform:translateY(-4px);
+
+    box-shadow:
+    0 15px 30px rgba(37,99,235,.4);
+}
+
+/* ==================================
+   RESPONSIVE
+================================== */
+
+@media(max-width:900px){
+
+    .h2 h2{
+        font-size:35px;
+    }
+
+    .h3{
+        font-size:22px;
+    }
+
+    .p p,
+    .p1 p{
+        font-size:18px;
+
+    }
+
+    table,
+    tr,
+    td{
+        display:block;
+        text-align:center;
+    }
+
+    .caja img,
+    .caja1 img{
+        width:100%;
+        height:auto;
+    }
+}

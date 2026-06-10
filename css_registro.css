@@ -1,0 +1,163 @@
+@charset "utf-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+
+    font-family:'Poppins',sans-serif;
+
+    background:
+    linear-gradient(
+        rgba(2,6,23,.88),
+        rgba(15,23,42,.90)
+    ),
+    url("indice3.jpg");
+
+    background-size:cover;
+    background-position:center;
+    background-attachment:fixed;
+
+    min-height:100vh;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    padding:30px;
+}
+
+.contenedor{
+
+    width:100%;
+    max-width:600px;
+
+    background:rgba(255,255,255,.05);
+
+    backdrop-filter:blur(10px);
+
+    border:1px solid rgba(255,255,255,.08);
+
+    border-radius:25px;
+
+    padding:40px;
+
+    box-shadow:
+    0 15px 35px rgba(0,0,0,.35);
+}
+
+h1{
+
+    text-align:center;
+
+    color:#60a5fa;
+
+    margin-bottom:10px;
+
+    font-size:42px;
+}
+
+.subtitulo{
+
+    text-align:center;
+
+    color:#cbd5e1;
+
+    margin-bottom:30px;
+
+    font-size:18px;
+}
+
+label{
+
+    display:block;
+
+    margin-bottom:8px;
+
+    margin-top:18px;
+
+    color:#dbeafe;
+
+    font-weight:500;
+}
+
+input{
+
+    width:100%;
+
+    padding:15px;
+
+    border:none;
+
+    border-radius:12px;
+
+    background:#1e293b;
+
+    color:white;
+
+    font-size:16px;
+
+    outline:none;
+}
+
+input:focus{
+
+    border:1px solid #3b82f6;
+}
+
+button{
+
+    width:100%;
+
+    margin-top:30px;
+
+    padding:15px;
+
+    border:none;
+
+    border-radius:12px;
+
+    background:linear-gradient(
+        90deg,
+        #2563eb,
+        #1d4ed8
+    );
+
+    color:white;
+
+    font-size:18px;
+
+    font-weight:600;
+
+    cursor:pointer;
+
+    transition:.3s;
+}
+
+button:hover{
+
+    transform:translateY(-3px);
+
+    box-shadow:
+    0 10px 20px rgba(37,99,235,.3);
+}
+
+@media(max-width:768px){
+
+    .contenedor{
+
+        padding:25px;
+    }
+
+    h1{
+
+        font-size:32px;
+    }
+}@charset "utf-8";
+/* CSS Document */
+

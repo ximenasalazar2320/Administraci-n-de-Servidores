@@ -1,0 +1,71 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Pixel</title>
+</head>
+
+<link rel="stylesheet" href="EstiloPag.css">
+	
+<body>	
+
+<div class="titulo">PIXEL&nbsp;</div>
+	<div class="sub">¿Que son?</div>
+	<div class="p1"></div>	
+	
+<img src="pi.jpeg" alt="Cartelera de cine" width="850">
+	<br>
+<div class="p1">El término píxel proviene de picture element (elemento de imagen) y se refiere a la unidad mínima e indivisible de una imagen digital. En otras palabras, es el “bloque” más pequeño que, junto con millones de otros, forma una imagen en una pantalla, una fotografía digital o un archivo gráfico.
+<br>
+<p1>Cuando miras una pantalla muy de cerca, puedes notar que la imagen está formada por diminutos cuadraditos de color: cada uno de esos es un píxel.</p1>
+		<br><br>
+
+
+	
+<div class="sub">Propiedades de un píxel</div>
+
+	<li class="sub1">Posición:</li>
+<div class="p1">Cada píxel tiene una ubicación dentro de la cuadrícula (matriz) de la imagen, identificada por coordenadas (x, y).</div>
+
+<li  class="sub1">Color:</li>
+	<div class="p1">El color de un píxel se representa mediante valores numéricos, según el modelo de color:
+
+<li>RGB (Red, Green, Blue): se combinan estos tres colores primarios de luz.</li>
+
+Ejemplo: (255, 0, 0) = rojo puro.
+
+<li>CMYK (Cyan, Magenta, Yellow, Black): usado en impresión.</li>
+
+<li>Escala de grises: 0 = negro, 255 = blanco (en 8 bits).</li></div>
+
+<li  class="sub1">Profundidad de color:</li>
+<div class="p1">Es la cantidad de bits que se usan para representar el color de un píxel:
+
+<li>1 bit → blanco o negro.</li>
+
+<li>8 bits → 256 colores.</li>
+
+<li>24 bits → 16,7 millones de colores (True Color).</li>
+
+<li>32 bits → incluye canal alfa (transparencia).</li></div>
+
+
+	<div class="sub">Procediento para comprimir </div>
+	<p>Matriz de Umbral Binario </p>
+	<div class="p1">	Función: Los píxeles de la imagen original se comparan con un valor umbral. Si el píxel es mayor que el umbral, se vuelve blanco (255). Si es menor o igual, se vuelve negro (0).</div>
+	<div class="p1">	Resultado: Crea un contraste claro donde los objetos se separan del fondo.</div>
+<p>Matriz de Umbral Inverso  </p>
+	<div class="p1">	Función: Invierte la lógica. Si el píxel es mayor que el umbral, se vuelve negro (0). Si es menor o igual, se vuelve blanco (255).</div>
+	<div class="p1">	Resultado: Separa el fondo del objeto, pero con los colores invertidos.</div>
+	
+	<p>Matriz de Umbral de Intervalo  </p>
+	<div class="p1">	Función: Se utilizan dos umbrales (mínimo y máximo). Los píxeles de la imagen original que caen dentro de un rango de valores se vuelven blancos (255), y los que quedan fuera se vuelven negros (0).</div>
+	<div class="p1">	Resultado: Permite aislar solo los píxeles que tienen un nivel de intensidad específico, ignorando los muy oscuros y los muy brillantes.</div>
+	<p>Matriz de Intervalo de Umbral en Escala de Grises (Operador Inverso)</p>
+	<div class="p1">	Función:La matriz original es simplemente la Matriz de Píxeles que representa una porción de la imagen, donde los números (de 0 a 255) indican la intensidad de brillo.
+La función del operador aplicado es la Segmentación por Umbral a Cero Inverso. Este método utiliza un valor de umbral (probablemente alrededor de \mathbf{T=100}) para aislar tonos de gris específicos.
+El procedimiento es el siguiente: el operador compara cada píxel con el umbral. Los píxeles que están por debajo del umbral (los más oscuros/medios) son mantenidos con sus valores de brillo originales. Por el contrario, los píxeles que están por encima del umbral (los más brillantes) son eliminados y su valor se establece a cero (0), es decir, negro puro.</div>
+	<div class="p1">Resultado: la matriz de salida conserva los detalles de las áreas oscuras y medianas de la imagen, mientras que todas las áreas brillantes son "recortadas" y se vuelven negras. Este proceso es útil para resaltar un rango tonal bajo específico</div>
+	<img src="imagenes_2/pi.jpg" alt="Cartelera de cine" width="850">
+</body>
+</html>

@@ -1,0 +1,574 @@
+/* ==================================
+   FUENTE
+================================== */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+
+/* ==================================
+   RESET
+================================== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+
+    font-family:'Poppins',sans-serif;
+
+    background:linear-gradient(
+        135deg,
+        #020617,
+        #0f172a,
+        #111827
+    );
+
+    color:white;
+
+    min-height:100vh;
+}
+
+body{
+    font-family:'Poppins',sans-serif;
+
+    background:
+    linear-gradient(
+        rgba(2,6,23,.88),
+        rgba(15,23,42,.90)
+    ),
+    url("indice3.jpg");
+
+    background-size:cover;
+    background-position:center;
+    background-attachment:fixed;
+
+    color:white;
+    min-height:100vh;
+}
+
+/* ==================================
+   SCROLL
+================================== */
+
+::-webkit-scrollbar{
+    width:10px;
+}
+
+::-webkit-scrollbar-track{
+    background:#111827;
+}
+
+::-webkit-scrollbar-thumb{
+    background:#3b82f6;
+    border-radius:20px;
+}
+
+/* ==================================
+   MENÚ LATERAL
+================================== */
+
+.sidebar{
+
+    position:fixed;
+
+    left:0;
+    top:0;
+
+    width:280px;
+
+    height:100vh;
+
+    background:rgba(15,23,42,.95);
+
+    backdrop-filter:blur(15px);
+
+    border-right:1px solid rgba(255,255,255,.08);
+
+    box-shadow:
+    10px 0 40px rgba(0,0,0,.4);
+
+    z-index:999;
+}
+
+/* ==================================
+   LOGO
+================================== */
+
+.logo{
+
+    text-align:center;
+
+    padding:35px;
+
+    font-size:34px;
+
+    font-weight:700;
+
+    letter-spacing:2px;
+
+    color:#60a5fa;
+
+    border-bottom:1px solid rgba(255,255,255,.08);
+}
+
+/* ==================================
+   MENÚ
+================================== */
+
+.sidebar ul{
+
+    list-style:none;
+
+    margin-top:25px;
+}
+
+.sidebar ul li{
+
+    margin:8px 0;
+}
+
+.sidebar ul li a{
+
+    display:block;
+
+    margin:0 12px;
+
+    padding:18px 25px;
+
+    border-radius:12px;
+
+    text-decoration:none;
+
+    color:#cbd5e1;
+
+    font-size:20px;
+
+    transition:.3s;
+}
+
+.sidebar ul li a:hover{
+
+    background:linear-gradient(
+        90deg,
+        #2563eb,
+        #1d4ed8
+    );
+
+    color:white;
+
+    transform:translateX(8px);
+}
+
+/* ==================================
+   ENLACE ACTIVO
+================================== */
+
+.activo{
+
+    background:linear-gradient(
+        90deg,
+        #2563eb,
+        #1d4ed8
+    );
+
+    color:white !important;
+}
+
+/* ==================================
+   CONTENIDO
+================================== */
+
+.contenido{
+
+    margin-left:310px;
+
+    padding:50px;
+}
+
+/* ==================================
+   TITULOS
+================================== */
+
+h1{
+
+    font-size:55px;
+
+    margin-bottom:10px;
+
+    color:white;
+}
+
+.subtitulo{
+
+    color:#94a3b8;
+
+    font-size:20px;
+
+    margin-bottom:20px;
+}
+
+.linea{
+
+    width:120px;
+
+    height:5px;
+
+    background:#3b82f6;
+
+    border-radius:20px;
+
+    margin-bottom:40px;
+}
+
+h2{
+
+    color:#60a5fa;
+
+    margin-bottom:20px;
+}
+
+/* ==================================
+   BANNER
+================================== */
+
+.banner{
+
+    width:100%;
+
+    overflow:hidden;
+
+    border-radius:25px;
+
+    margin-bottom:30px;
+
+    box-shadow:
+    0 20px 40px rgba(0,0,0,.4);
+}
+
+.banner img{
+
+    width:100%;
+
+    display:block;
+
+    transition:.5s;
+}
+
+.banner img:hover{
+
+    transform:scale(1.03);
+}
+
+/* ==================================
+   TARJETAS
+================================== */
+
+.card{
+
+    background:rgba(255,255,255,.05);
+
+    backdrop-filter:blur(10px);
+
+    border:1px solid rgba(255,255,255,.08);
+
+    border-radius:25px;
+
+    padding:35px;
+
+    margin-bottom:30px;
+
+    box-shadow:
+    0 15px 35px rgba(0,0,0,.35);
+}
+
+.card h2{
+
+    color:#60a5fa;
+
+    margin-bottom:15px;
+}
+
+.card p{
+
+    color:#d1d5db;
+
+    line-height:1.8;
+
+    text-align:justify;
+}
+
+/* ==================================
+   INDICE GENERAL
+================================== */
+
+.contenido-indice{
+
+    width:95%;
+
+    max-width:1400px;
+
+    margin:auto;
+
+    padding:50px 20px;
+}
+
+.encabezado-indice{
+
+    text-align:center;
+
+    margin-bottom:50px;
+}
+
+.encabezado-indice h1{
+
+    font-size:60px;
+
+    color:white;
+
+    margin-bottom:15px;
+}
+
+.encabezado-indice p{
+
+    color:#94a3b8;
+
+    font-size:20px;
+}
+
+/* ==================================
+   GRID DE TEMAS
+================================== */
+
+.grid-indice{
+
+    display:grid;
+
+    grid-template-columns:
+    repeat(auto-fit,minmax(350px,1fr));
+
+    gap:30px;
+}
+
+/* ==================================
+   BLOQUES DEL INDICE
+================================== */
+
+.bloque{
+
+    background:rgba(255,255,255,.05);
+
+    backdrop-filter:blur(10px);
+
+    border:1px solid rgba(255,255,255,.08);
+
+    border-radius:25px;
+
+    padding:30px;
+
+    transition:.4s;
+
+    box-shadow:
+    0 15px 35px rgba(0,0,0,.3);
+}
+
+.bloque:hover{
+
+    transform:translateY(-8px);
+
+    box-shadow:
+    0 20px 40px rgba(37,99,235,.2);
+}
+
+.bloque h2{
+
+    font-size:24px;
+
+    color:#60a5fa;
+
+    margin-bottom:20px;
+}
+
+/* ==================================
+   ENLACES DEL INDICE
+================================== */
+
+.bloque a{
+
+    display:block;
+
+    text-decoration:none;
+
+    color:#dbeafe;
+
+    background:rgba(255,255,255,.03);
+
+    padding:12px 15px;
+
+    margin:8px 0;
+
+    border-radius:10px;
+
+    transition:.3s;
+}
+
+.bloque a:hover{
+
+    background:linear-gradient(
+        90deg,
+        #2563eb,
+        #1d4ed8
+    );
+
+    color:white;
+
+    padding-left:25px;
+}
+
+/* ==================================
+   SEPARADOR
+================================== */
+
+.separador{
+
+    margin:60px 0;
+
+    height:2px;
+
+    background:linear-gradient(
+        90deg,
+        transparent,
+        #3b82f6,
+        transparent
+    );
+}
+
+/* ==================================
+   TABLAS
+================================== */
+
+table{
+
+    width:100%;
+
+    border-collapse:collapse;
+
+    margin-top:20px;
+}
+
+th{
+
+    background:#2563eb;
+
+    padding:15px;
+
+    color:white;
+}
+
+td{
+
+    background:#1e293b;
+
+    padding:15px;
+
+    border-bottom:1px solid rgba(255,255,255,.05);
+}
+
+/* ==================================
+   FORMULARIOS
+================================== */
+
+input,
+textarea{
+
+    width:100%;
+
+    padding:15px;
+
+    margin-top:10px;
+
+    border:none;
+
+    border-radius:10px;
+
+    background:#1e293b;
+
+    color:white;
+}
+
+button{
+
+    margin-top:15px;
+
+    padding:15px 30px;
+
+    border:none;
+
+    border-radius:10px;
+
+    background:#2563eb;
+
+    color:white;
+
+    cursor:pointer;
+
+    transition:.3s;
+}
+
+button:hover{
+
+    background:#1d4ed8;
+}
+
+/* ==================================
+   FOOTER
+================================== */
+
+footer{
+
+    text-align:center;
+
+    padding:30px;
+
+    margin-top:50px;
+
+    color:#94a3b8;
+}
+
+/* ==================================
+   RESPONSIVE
+================================== */
+
+@media(max-width:900px){
+
+    .sidebar{
+
+        width:100%;
+
+        height:auto;
+
+        position:relative;
+    }
+
+    .contenido{
+
+        margin-left:0;
+
+        padding:25px;
+    }
+
+    h1{
+
+        font-size:38px;
+    }
+
+    .grid-indice{
+
+        grid-template-columns:1fr;
+    }
+}

@@ -1,0 +1,248 @@
+@charset "utf-8";
+
+/* ==================================
+   FUENTE
+================================== */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+
+/* ==================================
+   RESET
+================================== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+/* ==================================
+   BODY
+================================== */
+
+body{
+
+    font-family:'Poppins',sans-serif;
+
+    background:
+    linear-gradient(
+        rgba(2,6,23,.88),
+        rgba(15,23,42,.90)
+    ),
+    url("indice3.jpg");
+
+    background-size:cover;
+    background-position:center;
+    background-attachment:fixed;
+
+    color:white;
+
+    max-width:1400px;
+
+    margin:auto;
+
+    padding:40px;
+}
+
+/* ==================================
+   SCROLL
+================================== */
+
+::-webkit-scrollbar{
+    width:10px;
+}
+
+::-webkit-scrollbar-track{
+    background:#111827;
+}
+
+::-webkit-scrollbar-thumb{
+    background:#3b82f6;
+    border-radius:20px;
+}
+
+/* ==================================
+   TITULO PRINCIPAL
+================================== */
+
+.h{
+
+    text-align:center;
+
+    font-size:60px;
+
+    font-weight:700;
+
+    color:white;
+
+    background:rgba(255,255,255,.05);
+
+    backdrop-filter:blur(10px);
+
+    border:1px solid rgba(255,255,255,.08);
+
+    border-radius:25px;
+
+    padding:25px;
+
+    margin-bottom:40px;
+
+    box-shadow:
+    0 15px 35px rgba(0,0,0,.35);
+}
+
+/* ==================================
+   IMAGENES
+================================== */
+
+.caja,
+.caja1{
+
+    background:rgba(255,255,255,.05);
+
+    backdrop-filter:blur(10px);
+
+    border:1px solid rgba(255,255,255,.08);
+
+    border-radius:25px;
+
+    padding:15px;
+
+    margin:20px auto;
+
+    width:fit-content;
+
+    height:auto;
+
+    box-shadow:
+    0 15px 35px rgba(0,0,0,.35);
+
+    transition:.4s;
+}
+
+.caja:hover,
+.caja1:hover{
+
+    transform:translateY(-8px);
+
+    box-shadow:
+    0 20px 40px rgba(37,99,235,.2);
+}
+
+.caja img,
+.caja1 img{
+
+    display:block;
+
+    max-width:100%;
+
+    border-radius:15px;
+}
+
+/* ==================================
+   TITULOS SECUNDARIOS
+================================== */
+
+.h3{
+
+    color:#60a5fa;
+
+    font-size:32px;
+
+    font-weight:700;
+
+    margin-top:35px;
+
+    margin-bottom:15px;
+}
+
+.h2{
+
+    color:#93c5fd;
+
+    font-size:26px;
+
+    font-weight:600;
+
+    margin-top:20px;
+
+    margin-bottom:10px;
+}
+
+/* ==================================
+   PARRAFOS
+================================== */
+
+.p,
+.p1{
+
+    background:rgba(255,255,255,.05);
+
+    backdrop-filter:blur(10px);
+
+    border:1px solid rgba(255,255,255,.08);
+
+    border-radius:20px;
+
+    padding:25px;
+
+    margin-bottom:20px;
+
+    color:#d1d5db;
+
+    line-height:1.9;
+
+    text-align:justify;
+
+    box-shadow:
+    0 10px 25px rgba(0,0,0,.25);
+}
+
+.p{
+
+    font-size:22px;
+}
+
+.p1{
+
+    font-size:20px;
+}
+
+/* ==================================
+   RESPONSIVE
+================================== */
+
+@media(max-width:900px){
+
+    body{
+        padding:20px;
+    }
+
+    .h{
+        font-size:40px;
+    }
+
+    .h3{
+        font-size:26px;
+    }
+
+    .h2{
+        font-size:22px;
+    }
+
+    .p,
+    .p1{
+        font-size:18px;
+    }
+
+    .caja,
+    .caja1{
+        width:100%;
+    }
+
+    .caja img,
+    .caja1 img{
+        width:100%;
+        height:auto;
+    }
+}

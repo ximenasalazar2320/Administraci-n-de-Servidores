@@ -1,0 +1,236 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Conexión a Base de Datos</title>
+<link rel="stylesheet" href="css_3.css">
+</head>
+
+<body background="imagenes/fondo.jpg">
+
+<br>
+
+<div class="h2">
+    <h2>CONEXIÓN A BASE DE DATOS</h2>
+</div>
+
+<center>
+<table>
+<tr>
+<td>
+    <div class="caja">
+        <img src="imagenes/basedatos1.jpg" alt="" width="300" height="200">
+    </div>
+</td>
+
+<td>
+    <div class="caja1">
+        <img src="imagenes/basedatos2.jpg" alt="" width="300" height="200">
+    </div>
+</td>
+</tr>
+</table>
+</center>
+
+<div class="h3">
+    <h3>¿Qué es una conexión a base de datos?</h3>
+</div>
+
+<div class="p">
+    <p>
+        Una conexión a base de datos es el enlace que permite a una aplicación, programa o sistema comunicarse con una base de datos para consultar, almacenar, modificar o eliminar información. Gracias a esta conexión, los usuarios pueden acceder a datos organizados y actualizados en tiempo real desde diferentes dispositivos o aplicaciones. Una conexión correctamente configurada permite intercambiar información de forma rápida y segura. 
+    </p>
+</div>
+
+<div class="h3">
+<br>
+    <h3>¿Cómo funciona una conexión a base de datos?</h3>
+</div>
+
+<div class="p">
+    <p>
+        El proceso comienza cuando una aplicación envía una solicitud al servidor donde se encuentra la base de datos. El servidor recibe la petición, verifica las credenciales de acceso y procesa la consulta solicitada. Finalmente, devuelve los resultados al usuario o a la aplicación que realizó la solicitud. Este proceso permite acceder a información almacenada de manera eficiente. :contentReference[oaicite:0]{index=0}
+    </p>
+</div>
+
+<div class="h3">
+    <h3>Elementos de una conexión a base de datos</h3>
+</div>
+
+<div class="h3">
+    <p>Servidor</p>
+</div>
+
+<div class="p1">
+    <p>
+        Es el equipo o sistema donde se encuentra alojada la base de datos y que responde a las solicitudes realizadas por los usuarios o aplicaciones.
+    </p>
+</div>
+
+<div class="h3">
+    <p>Base de datos</p>
+</div>
+
+<div class="p1">
+    <p>
+        Es el conjunto organizado de información almacenada y administrada mediante un sistema gestor de bases de datos.
+    </p>
+</div>
+
+<div class="h3">
+    <p>Usuario y contraseña</p>
+</div>
+
+<div class="p1">
+    <p>
+        Son las credenciales utilizadas para autenticar y autorizar el acceso a la información almacenada.
+    </p>
+</div>
+
+<div class="h3">
+    <p>Puerto de conexión</p>
+</div>
+
+<div class="p1">
+    <p>
+        Es el canal de comunicación utilizado para establecer la conexión entre la aplicación y el servidor de base de datos. :contentReference[oaicite:1]{index=1}
+    </p>
+</div>
+
+<div class="h3">
+    <p>Controlador o Driver</p>
+</div>
+
+<div class="p1">
+    <p>
+        Es el software que permite la comunicación entre la aplicación y el sistema gestor de bases de datos.
+    </p>
+</div>
+
+<div class="h3">
+    <h3>Tipos de conexiones a bases de datos</h3>
+</div>
+
+<div class="h3">
+    <p>Conexión Local</p>
+</div>
+
+<div class="p1">
+    <p>
+        La aplicación y la base de datos se encuentran en el mismo equipo, lo que permite una comunicación rápida y directa.
+    </p>
+</div>
+
+<div class="h3">
+    <p>Conexión Remota</p>
+</div>
+
+<div class="p1">
+    <p>
+        La aplicación se conecta a una base de datos ubicada en otro servidor a través de una red local o internet.
+    </p>
+</div>
+
+<div class="h3">
+    <p>Conexión Cliente-Servidor</p>
+</div>
+
+<div class="p1">
+    <p>
+        Un cliente solicita información a un servidor que procesa las consultas y devuelve los resultados correspondientes.
+    </p>
+</div>
+
+<div class="h3">
+    <p>Conexión mediante JDBC u ODBC</p>
+</div>
+
+<div class="p1">
+    <p>
+        Utiliza controladores especializados para permitir la comunicación entre aplicaciones y diferentes sistemas gestores de bases de datos. :contentReference[oaicite:2]{index=2}
+    </p>
+</div>
+
+<div class="h3">
+    <h3>Características de una conexión a base de datos</h3>
+</div>
+
+<div class="h3">
+    <p>Acceso seguro</p>
+</div>
+
+<div class="p1">
+    <p>
+        Requiere autenticación mediante usuarios y contraseñas para proteger la información.
+    </p>
+</div>
+
+<div class="h3">
+    <p>Intercambio de datos</p>
+</div>
+
+<div class="p1">
+    <p>
+        Permite enviar y recibir información entre aplicaciones y bases de datos.
+    </p>
+</div>
+
+<div class="h3">
+    <p>Compatibilidad</p>
+</div>
+
+<div class="p1">
+    <p>
+        Puede establecerse con distintos sistemas gestores como MySQL, PostgreSQL, Oracle o SQL Server.
+    </p>
+</div>
+
+<div class="h3">
+    <p>Escalabilidad</p>
+</div>
+
+<div class="p1">
+    <p>
+        Permite soportar un número creciente de usuarios y consultas sin afectar significativamente el rendimiento.
+    </p>
+</div>
+
+<div class="h3">
+    <h3>Ventajas de las conexiones a bases de datos</h3>
+</div>
+
+<div class="p1">
+    <p>
+        • Permiten acceder a información en tiempo real.<br>
+        • Facilitan la administración de grandes volúmenes de datos.<br>
+        • Mejoran la organización y disponibilidad de la información.<br>
+        • Permiten que múltiples usuarios trabajen simultáneamente.<br>
+        • Incrementan la seguridad mediante autenticación y permisos.<br>
+        • Facilitan la integración entre aplicaciones y sistemas.
+    </p>
+</div>
+
+<div class="h3">
+    <h3>Importancia de las conexiones a bases de datos</h3>
+</div>
+
+<div class="p">
+    <p>
+        Las conexiones a bases de datos son fundamentales para el funcionamiento de aplicaciones, páginas web y sistemas empresariales. Gracias a ellas es posible almacenar, consultar y actualizar información de forma eficiente, permitiendo que los datos estén disponibles cuando se necesiten. Sin una conexión adecuada, la comunicación entre las aplicaciones y la información almacenada no sería posible. :contentReference[oaicite:3]{index=3}
+    </p>
+</div>
+
+<div class="h3">
+    <h3>Checa este link para conocer más sobre las conexiones a bases de datos</h3>
+</div>
+
+<div class="ahref">
+<center>
+<a href="https://doc.arcgis.com/es/insights/latest/get-started/create-a-database-connection.htm">
+Da click aquí
+</a>
+</center>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,65 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Documento sin título</title>
+</head>
+<link rel="stylesheet" href="estilos.css">
+<body>	
+
+<div class="titulo">ACÚSTICA</div>
+<div class="sub">¿Qué es?</div>
+	<div class="p1"></div>	
+	
+<img src="Acustica.jpg" alt="loss" width="850">
+	<br><br>
+<div class="p1">La Acústica es una rama de la física que se dedica al estudio completo del sonido, el infrasonido y el ultrasonido, es decir, de las ondas mecánicas que se propagan a través de la materia (sólidos, líquidos o gases). Su campo de estudio abarca desde la generación y la transmisión de estas ondas hasta su recepción y percepción, empleando modelos físicos y matemáticos para describir los fenómenos sonoros. Tiene aplicaciones esenciales y diversas en muchos campos, incluyendo la arquitectura (para el aislamiento y acondicionamiento de espacios), la música, la medicina (con el uso del ultrasonido) y el control de la contaminación acústica.
+
+</div>
+
+
+<br><br><br>
+	
+<div class="sub">¿Cómo se forman?</div>
+
+	<li class="sub1"> Compresión Sin Pérdida </li>
+<div class="p1"> Compresión sin Pérdida 
+Este método reduce el tamaño del archivo sin eliminar absolutamente ningún dato de la señal de audio original. El audio resultante es una réplica exacta, a nivel de bit, del archivo original sin comprimir.
+
+¿Cómo se logra?
+Se basa en técnicas de compresión de datos que buscan y eliminan la redundancia en la información de la señal de audio, de forma similar a como se comprime un archivo ZIP o RAR.
+
+<ol>
+	<li>Eliminación de Redundancia: El algoritmo identifica patrones repetitivos en los datos del audio (como secuencias de bits idénticas o muy similares).</li>
+
+<li>Codificación Eficiente: En lugar de guardar el patrón repetitivo una y otra vez, el algoritmo lo reemplaza con una referencia o código más corto (por ejemplo, "repita este sonido 500 veces").</li>
+
+<li>Reversibilidad: Al descomprimir el archivo, el reproductor utiliza las referencias guardadas para reconstruir la señal original de manera perfecta, restaurando el 100% de los datos originales.</li>
+</ol>	
+</div>
+	<br><br>
+
+	<li class="sub1">Compresión con Pérdida </li>
+
+	
+<div class="p1"> Este método logra una reducción de tamaño mucho mayor al eliminar permanentemente información de la señal de audio. Se basa en modelos de percepción humana para descartar aquellos datos que es poco probable que el oído humano detecte.</div>
+	
+<div class="sub1">¿Cómo se logra?</div>
+
+<div class="p1">Se utiliza un concepto llamado modelo psicoacústico, que explota las limitaciones del oído humano.</div>
+<ol>
+<li>Análisis Psicoacústico: El algoritmo analiza la señal de audio para identificar sonidos y frecuencias que el oído humano no percibe bien, debido a:</li>
+</ol>
+<li class="p3">Enmascaramiento de Frecuencia: El oído humano deja de percibir sonidos suaves cuando están cerca de sonidos mucho más fuertes en una frecuencia similar. El algoritmo elimina el sonido suave.</li>
+
+<li class="p3">Enmascaramiento Temporal: Un sonido fuerte y repentino (como un tamborazo) puede "ocultar" sonidos que ocurren inmediatamente antes o después de él. El algoritmo elimina o reduce los datos de esos sonidos "ocultos".</li>
+
+<li class="p3">Frecuencias Inaudibles: Se eliminan las frecuencias muy bajas (infrasonido) o muy altas (ultrasonido) que están fuera del rango de audición humano (típicamente de 20 Hz a 20,000 Hz).</li>
+<ol>
+<li>Eliminación Irreversible: Una vez eliminados, estos datos se pierden para siempre. El archivo resultante es mucho más pequeño, pero es una aproximación del original.</li>
+
+<li>Tasa de Bits (Bitrate): La cantidad de información eliminada se controla mediante la tasa de bits (kbps) elegida. Una tasa más baja (ej. 128 kbps) implica más pérdida y menor calidad; una tasa más alta (ej. 320 kbps) implica menos pérdida y mayor calidad.</li>
+</ol>	
+<img src="acu2.png" alt="loss" width="850">	
+</body>
+</html>

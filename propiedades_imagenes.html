@@ -1,0 +1,80 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Propiedades_de_la_imagen_digital</title>
+</head>
+
+
+	<link rel="stylesheet" href="EstiloPag.css">
+<body>
+	<div class="titulo">PROPIEDADES DE LA IMAGEN DIGITAL</div>
+	<div class="sub">¿Que es?</div>
+	
+<div class="p1">   
+		<img src="pim.jpg" alt="Television" width="850">
+		<br><br>
+		Una imagen digital posee diversas propiedades que determinan su calidad y uso: la resolución, que indica la cantidad de píxeles que la conforman; las dimensiones, que expresan su tamaño en píxeles; la profundidad de color, que define cuántos colores puede mostrar cada píxel; el brillo y el contraste, que influyen en la claridad y percepción de los detalles; el formato de archivo, que determina si usa compresión con pérdida o sin pérdida; el tamaño de archivo, que depende de la resolución y el formato; los modelos de color (como RGB, CMYK o HSB) que organizan la información cromática; la frecuencia espacial, que refleja el nivel de detalle en la imagen; y el histograma, que muestra la distribución de tonos y colores. Todas estas propiedades permiten representar, almacenar y manipular las imágenes digitales en distintos contextos como pantallas, impresión, diseño o análisis científico.<br><br>
+	</div>
+	
+	<div class="sub">Propiedades de la imagen digital</div>
+	<p>Resolución</p>
+	
+<br><br>
+	
+<li>Cantidad de píxeles en la imagen, expresada como ancho × alto (ejemplo: 1920×1080).</li>
+<li>También puede medirse en dpi (dots per inch) o ppp (píxeles por pulgada) en impresión.
+</li>
+<li>A mayor resolución → más detalle y nitidez.</li>
+
+		
+	<p>Dimensiones</p>
+
+<br><br>
+	
+<li>El tamaño en píxeles de la imagen (ejemplo: 800×600 px).</li>
+<li>Diferente a la resolución física, que depende de la pantalla o medio de impresión.
+</li>
+
+	<p>Contraste</p>
+<li>Diferencia entre las zonas claras y oscuras de la imagen.</li>
+	<li>Diferencia entre las zonas claras y oscuras de la imagen.</li>
+	<p>Formato de archivo</p>
+<li>Forma en que se guardan los datos de la imagen.</li>
+<li>Puede ser:</li>
+		<li> Con compresión con pérdida (JPEG → se pierde calidad).</li>
+		<li>Sin pérdida (PNG, TIFF → conserva todos los datos).</li>
+		
+		
+	<p>Modelos de color</p>
+<li>Sistema matemático que define los colores.</li>
+			 <li>RGB (Red, Green, Blue): usado en pantallas.</li>
+			 <li>CMYK (Cyan, Magenta, Yellow, Black): usado en impresión.</li>
+			 <li>HSB/HSV (Hue, Saturation, Brightness/Value): útil en edición.</li>
+	
+	<img src="imagenes_2/jp.jpg" alt="" width="850">
+	<div class="sub">Procediento para comprimir imagenes digitales</div>
+	<p>Matriz de Umbral Binario </p>
+	<div class="p1">	Función: Los píxeles de la imagen original se comparan con un valor umbral. Si el píxel es mayor que el umbral, se vuelve blanco (255). Si es menor o igual, se vuelve negro (0).</div>
+	<div class="p1">	Resultado: Crea un contraste claro donde los objetos se separan del fondo.</div>
+<p>Matriz de Umbral Inverso  </p>
+	<div class="p1">	Función: Invierte la lógica. Si el píxel es mayor que el umbral, se vuelve negro (0). Si es menor o igual, se vuelve blanco (255).</div>
+	<div class="p1">	Resultado: Separa el fondo del objeto, pero con los colores invertidos.</div>
+	
+	<p>Matriz de Umbral de Intervalo  </p>
+	<div class="p1">	Función: Se utilizan dos umbrales (mínimo y máximo). Los píxeles de la imagen original que caen dentro de un rango de valores se vuelven blancos (255), y los que quedan fuera se vuelven negros (0).</div>
+	<div class="p1">	Resultado: Permite aislar solo los píxeles que tienen un nivel de intensidad específico, ignorando los muy oscuros y los muy brillantes.</div>
+	<p>Matriz de Intervalo de Umbral en Escala de Grises (Operador Inverso)</p>
+	<div class="p1">	Función:La matriz original es simplemente la Matriz de Píxeles que representa una porción de la imagen, donde los números (de 0 a 255) indican la intensidad de brillo.
+La función del operador aplicado es la Segmentación por Umbral a Cero Inverso. Este método utiliza un valor de umbral (probablemente alrededor de \mathbf{T=100}) para aislar tonos de gris específicos.
+El procedimiento es el siguiente: el operador compara cada píxel con el umbral. Los píxeles que están por debajo del umbral (los más oscuros/medios) son mantenidos con sus valores de brillo originales. Por el contrario, los píxeles que están por encima del umbral (los más brillantes) son eliminados y su valor se establece a cero (0), es decir, negro puro.</div>
+	<div class="p1">Resultado: la matriz de salida conserva los detalles de las áreas oscuras y medianas de la imagen, mientras que todas las áreas brillantes son "recortadas" y se vuelven negras. Este proceso es útil para resaltar un rango tonal bajo específico</div>
+	<div class="h3">
+	 <h3>Checa este link, te dara más informacón sobre las  propiedades de imágenes</h3></div>
+	<div class="ahref">
+	<center><a href="https://www.youtube.com/watch?v=rtXnD2uFdc0">Da click aquí</a></center></div>
+	
+	</body>
+</html>
+
+

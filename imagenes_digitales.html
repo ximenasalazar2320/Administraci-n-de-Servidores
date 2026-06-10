@@ -1,0 +1,75 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>imagines_digitales</title>
+</head>
+
+<link rel="stylesheet" href="EstiloPag.css">
+	
+<body>	
+
+<div class="titulo">IMAGENES DIGITALES</div>
+	<div class="sub">¿Que son?</div>
+<div class="p1">	
+	
+<img src="idigital.jpg" alt="Cartelera de cine" width="850">
+Una imagen digital es la representación visual de un objeto, escena o diseño en formato numérico (digital), que puede ser almacenado, procesado y mostrado en dispositivos electrónicos como computadoras, cámaras, teléfonos, televisores, etc.
+		<br><br>
+
+A diferencia de las imágenes analógicas (como las fotos en papel o una pintura), las digitales no son continuas: están compuestas por una estructura matemática de datos, generalmente en píxeles o vectores, que al interpretarse en una pantalla forman la imagen visible.
+
+En otras palabras:</div>
+
+<li>Es información visual convertida en datos binarios (0 y 1).</li>
+
+<li>Cada punto de la imagen tiene un valor numérico que indica color, brillo e intensidad.</li><br><br>
+
+	
+<div class="sub">¿Cómo se forman?</div>
+
+	<li class="sub1">Captura:</li>
+<div class="p1">Se generan mediante cámaras digitales, escáneres, ilustraciones hechas en programas, etc.</div>
+
+<li  class="sub1">Digitalización:</li>
+	<div class="p1">La imagen del mundo real se transforma en una cuadrícula de píxeles.</div>
+
+<li  class="sub1">Almacenamiento:</li>
+<div class="p1">Esa información se guarda en un archivo con un formato digital (ejemplo: JPEG, PNG, SVG).</div>
+
+<li  class="sub1">Visualización:</li>
+<div class="p1">Los dispositivos electrónicos (pantallas LED, monitores, proyectores) interpretan esos datos y los muestran como imagen visible.</div>
+	<div class="sub">Procediento para comprimir imagenes digitales</div>
+	<p>Matriz de Umbral Binario </p>
+	<div class="p1">	Función: Los píxeles de la imagen original se comparan con un valor umbral. Si el píxel es mayor que el umbral, se vuelve blanco (255). Si es menor o igual, se vuelve negro (0).</div>
+	<div class="p1">	Resultado: Crea un contraste claro donde los objetos se separan del fondo.</div>
+<p>Matriz de Umbral Inverso  </p>
+	<div class="p1">	Función: Invierte la lógica. Si el píxel es mayor que el umbral, se vuelve negro (0). Si es menor o igual, se vuelve blanco (255).</div>
+	<div class="p1">	Resultado: Separa el fondo del objeto, pero con los colores invertidos.</div>
+	
+	<p>Matriz de Umbral de Intervalo  </p>
+	<div class="p1">	Función: Se utilizan dos umbrales (mínimo y máximo). Los píxeles de la imagen original que caen dentro de un rango de valores se vuelven blancos (255), y los que quedan fuera se vuelven negros (0).</div>
+	<div class="p1">	Resultado: Permite aislar solo los píxeles que tienen un nivel de intensidad específico, ignorando los muy oscuros y los muy brillantes.</div>
+	<p>Matriz de Intervalo de Umbral en Escala de Grises (Operador Inverso)</p>
+	<div class="p1">	Función:La matriz original es simplemente la Matriz de Píxeles que representa una porción de la imagen, donde los números (de 0 a 255) indican la intensidad de brillo.
+La función del operador aplicado es la Segmentación por Umbral a Cero Inverso. Este método utiliza un valor de umbral (probablemente alrededor de \mathbf{T=100}) para aislar tonos de gris específicos.
+El procedimiento es el siguiente: el operador compara cada píxel con el umbral. Los píxeles que están por debajo del umbral (los más oscuros/medios) son mantenidos con sus valores de brillo originales. Por el contrario, los píxeles que están por encima del umbral (los más brillantes) son eliminados y su valor se establece a cero (0), es decir, negro puro.</div>
+	<div class="p1">Resultado: la matriz de salida conserva los detalles de las áreas oscuras y medianas de la imagen, mientras que todas las áreas brillantes son "recortadas" y se vuelven negras. Este proceso es útil para resaltar un rango tonal bajo específico</div>
+	<div class="sub">Tipos de imagenes digitales:</div>
+	<table>
+  
+    <tr>
+      <th>Mapa de Bits (o Ráster):</th>
+      <th><img src="imagenes_2/pixel.jpg" alt="Mapa de Bits (o Ráster):" width="450"></th>
+    </tr>
+  
+ 
+    <tr>
+      <td>Imágenes Vectoriales:</td>
+      <td><img src="imagenes_2/vec.jpg" alt="Imágenes Vectoriales" width="450"></td>
+    </tr>
+    
+  
+</table>
+</body>
+</html>
